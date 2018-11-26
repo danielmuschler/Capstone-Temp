@@ -1,2 +1,12 @@
 json.id pitch.id
-json.name pitch.name
+json.title pitch.title
+json.logline pitch.logline
+json.genre pitch.genre
+json.synopsis pitch.synopsis
+json.producer_statement pitch.producer_statement
+json.thematic_description pitch.thematic_description
+json.visual_style_description pitch.visual_style_description
+json.filmmaker_bio pitch.filmmaker_bio
+json.characters pitch.characters
+json.locations pitch.locations
+json.musics pitch.musics
