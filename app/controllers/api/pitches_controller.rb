@@ -20,14 +20,31 @@ class Api::PitchesController < ApplicationController
       logline: params["logline"],
       genre: params["genre"],
       synopsis: params["synopsis"],
-      producer_statement: params["producer statement"],
-      thematic_description: params["thematic description"],
-      visual_style_description: params["visual style description"],
-      filmmaker_bio: params["filmmaker bio"],
+      producer_statement: params["producer_statement"],
+      thematic_description: params["thematic_description"],
+      visual_style_description: params["visual_style_description"],
+      filmmaker_bio: params["filmmaker_bio"],
       user_id: current_user.id
     )
 
     if @pitch.save
+      Location.create(
+        name: params["location_name"],
+        description: params["location_description"],
+        pitch_id: @pitch.id
+      )
+      Character.create(
+        first_name: params["first_name"],
+        last_name: params["last_name"],
+        description: params["character_description"],
+        pitch_id: @pitch.id
+      )
+      Music.create(
+        name: params["song_name"],
+        artist: params["artist"],
+        description: params["song_description"],
+        pitch_id: @pitch.id
+      )
       render "show.json.jbuilder"
     else
       render json: {errors: @pitch.errors.full_messages}, status: 422
