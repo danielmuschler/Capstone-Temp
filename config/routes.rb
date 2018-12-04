@@ -10,5 +10,9 @@ Rails.application.routes.draw do
     post "/users" => "users#create"
     
     post "/sessions" => "sessions#create"
+
+    get "/spotify_authorize" => "spotify#authorize"
+    get "/spotify/callback" => "spotify#callback"
+   
   end
 end
