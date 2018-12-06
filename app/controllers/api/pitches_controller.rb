@@ -10,6 +10,13 @@ class Api::PitchesController < ApplicationController
   def show
     pitch_id = params["id"]
     @pitch = Pitch.find_by(id: pitch_id)
+
+    flickr = FlickRaw::Flickr.new ENV["FLICKR_KEY"], ENV["FLICKR_SECRET"]
+    list = flickr.photos.getRecent
+    flickr.photos.search(:text => 'graffiti', :license => 5, :per_page => 50)
+    @stuff = list
+    
+
     render "show.json.jbuilder"
   end
 

@@ -10,3 +10,4 @@ json.filmmaker_bio pitch.filmmaker_bio
 json.characters pitch.characters
 json.locations pitch.locations
 json.musics pitch.musics
+json.stuff @stuff
