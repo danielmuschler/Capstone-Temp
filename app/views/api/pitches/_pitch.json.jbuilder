@@ -11,3 +11,4 @@ json.characters pitch.characters
 json.locations pitch.locations
 json.musics pitch.musics
 json.stuff @stuff
+json.spotify_id pitch.SpotifyID

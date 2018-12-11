@@ -24,7 +24,8 @@ class Api::PitchesController < ApplicationController
       thematic_description: params["thematic_description"],
       visual_style_description: params["visual_style_description"],
       filmmaker_bio: params["filmmaker_bio"],
-      user_id: current_user.id
+      user_id: current_user.id,
+      SpotifyID: params["SpotifyID"]
     )
 
     if @pitch.save
