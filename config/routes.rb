@@ -14,5 +14,6 @@ Rails.application.routes.draw do
     get "/spotify_authorize" => "spotify#authorize"
     get "/spotify/callback" => "spotify#callback"
    
+    get "/flickr/search" => "flickr#search"
   end
 end

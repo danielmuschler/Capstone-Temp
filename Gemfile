@@ -26,7 +26,8 @@ gem 'jwt'
 gem 'rack-cors', require: 'rack/cors'
 gem 'figaro'
 gem 'http'
-gem 'flickraw', :git => 'git://github.com/hanklords/flickraw.git'
+# gem 'flickraw', :git => 'git://github.com/hanklords/flickraw.git'
+gem 'flickraw'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
