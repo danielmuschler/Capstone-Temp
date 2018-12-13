@@ -13,6 +13,12 @@ class Api::FlickrController < ApplicationController
     # pp list[0]
     puts "=============================="
     pp info  
-    render json: {image: info["urls"][0]["_content"]}
+    # render json: {image: info["urls"][0]["_content"]}
+    farm = info["farm"]
+    server = info["server"]
+    id = info["id"]
+    secret = info["secret"]
+
+    render json: {image: "https://farm#{farm}.staticflickr.com/#{server}/#{id}_#{secret}.jpg"}
   end
 end
