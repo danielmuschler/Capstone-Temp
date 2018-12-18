@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     post "/pitches" => "pitches#create"
 
     post "/locations" => "locations#create"
+
+    post "/characters" => "characters#create"
+
     
     get "/users" => "users#index"
     post "/users" => "users#create"
