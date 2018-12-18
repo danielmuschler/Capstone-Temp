@@ -71,64 +71,57 @@ Pitch.create!(
   )
 
 Character.create!(
-  first_name:"Harry",
-  last_name:"Jones",
+  first_name:"Brad",
+  last_name:"Pitt",
   description:"A dapper gentleman who discovers love in Roman times.",
   pitch_id: 1
     )
 
 Character.create!(
-  first_name:"Sally",
-  last_name:"Draper",
+  first_name:"Jennifer",
+  last_name:"Lopez",
   description:"A flapper girl looking for love in all the wrong places.",
   pitch_id: 1
     )
 
 Character.create!(
-  first_name:"Claudius",
-  last_name:"Raines",
-  description:"A gladiator struggling with confidence.",
-  pitch_id: 1
-    )
-
-Character.create!(
   first_name:"Jack",
-  last_name:"James",
+  last_name:"White",
   description:"The CEO of Twitter.",
   pitch_id: 2
     )
 
 Character.create!(
-  first_name:"Cynthia",
-  last_name:"Harrison",
+  first_name:"Uma",
+  last_name:"Thurman",
   description:"The Prime Minister of England.",
   pitch_id: 2
     )
 
 Character.create!(
-  first_name:"Chase",
-  last_name:"Meridian",
+  first_name:"Nicole",
+  last_name:"Kidman",
   description:"Psychiatrist to Batman.",
   pitch_id: 3
     )
 
 Character.create!(
-  first_name:"George",
-  last_name:"Burns",
+  first_name:"Matt",
+  last_name:"Damon",
   description:"Detective",
   pitch_id: 3
     )
 
 Character.create!(
-  first_name:"Helmet 1",
-  last_name:"French",
+  first_name:"George",
+  last_name:"Clooney",
   description:"DJ",
   pitch_id: 4
     )
 
 Character.create!(
-  first_name:"Helmet 2",
-  last_name:"Parisian",
+  first_name:"Taylor",
+  last_name:"Swift",
   description:"Video Disc Jockey",
   pitch_id: 4
     )
@@ -158,32 +151,26 @@ Location.create!(
   )
 
 Location.create!(
-  name:"Twitter Headquarters",
-  description:"Where Jack Jones works.",
-  pitch_id: 2
-  )
-
-Location.create!(
   name:"Des Moines, Iowa",
   description:"Capital of Iowa, USA",
   pitch_id: 3
   )
 
 Location.create!(
-  name:"Des Moines Zoo",
-  description:"Zoo of Des Moines",
+  name:"Seattle, Washington",
+  description:"A city in the Northwest United States",
   pitch_id: 3
   )
 
 Location.create!(
-  name:"Daft Punk Recording Studio",
-  description:"Recording Studio in Paris, France",
+  name:"Paris",
+  description:"Capital of France",
   pitch_id: 4
   )
 
 Location.create!(
-  name:"United Center",
-  description:"Concert Venue on West Side of Chicago",
+  name:"Sydney Opera House",
+  description:"Opera House in Sydney, Australia",
   pitch_id: 4
   )
 
@@ -196,8 +183,8 @@ Music.create!(
 
 Music.create!(
   name:"God Save the Queen",
-  artist:"Adele",
-  description:"National Anthem of England",
+  artist:"Queen",
+  description:"Performed at A Night at the Opera",
   pitch_id: 2
   )
 
