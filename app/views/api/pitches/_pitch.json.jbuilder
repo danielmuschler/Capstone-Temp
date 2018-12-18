@@ -12,13 +12,13 @@ json.characters pitch.characters.each do |character|
   json.first_name character.first_name
   json.last_name character.last_name
   json.description character.description
-  json.image nil
+  json.image "https://cdn11.bigcommerce.com/s-nmernf2qen/stencil/47bbf000-ea64-0134-d24f-525400dfdca6/images/no-image.svg"
 end
 json.locations pitch.locations.each do |location|
   json.id location.id
   json.name location.name
   json.description location.description
-  json.image nil
+  json.image "https://cdn11.bigcommerce.com/s-nmernf2qen/stencil/47bbf000-ea64-0134-d24f-525400dfdca6/images/no-image.svg"
 end
 json.musics pitch.musics
 json.stuff @stuff

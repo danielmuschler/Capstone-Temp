@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     get "/pitches" => "pitches#index"
     get "/pitches/:id" => "pitches#show"
     post "/pitches" => "pitches#create"
+
+    post "/locations" => "locations#create"
     
     get "/users" => "users#index"
     post "/users" => "users#create"
